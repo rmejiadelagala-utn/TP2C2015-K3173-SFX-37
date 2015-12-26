@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AFC41B8-7879-445C-A791-66EA9C7CC274}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AerolineaFrba</RootNamespace>
+    <AssemblyName>AerolineaFrba</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abm Aeronave\AltaAeronaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Aeronave\AltaAeronaves.Designer.cs">
+      <DependentUpon>AltaAeronaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Aeronave\BajaAeronaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Aeronave\BajaAeronaves.Designer.cs">
+      <DependentUpon>BajaAeronaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Aeronave\FrmAltaModifAeronave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Aeronave\FrmAltaModifAeronave.Designer.cs">
+      <DependentUpon>FrmAltaModifAeronave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Aeronave\ListadoAeronaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Aeronave\ListadoAeronaves.Designer.cs">
+      <DependentUpon>ListadoAeronaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Aeronave\ModificacionAeronaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Aeronave\ModificacionAeronaves.Designer.cs">
+      <DependentUpon>ModificacionAeronaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ciudad\AltaCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ciudad\AltaCiudades.Designer.cs">
+      <DependentUpon>AltaCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ciudad\BajaCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ciudad\BajaCiudades.Designer.cs">
+      <DependentUpon>BajaCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ciudad\FrmAltaModifCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ciudad\FrmAltaModifCiudad.Designer.cs">
+      <DependentUpon>FrmAltaModifCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ciudad\ListadoCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ciudad\ListadoCiudades.Designer.cs">
+      <DependentUpon>ListadoCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ciudad\ModificacionCiudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ciudad\ModificacionCiudades.Designer.cs">
+      <DependentUpon>ModificacionCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Rol\AltaRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Rol\AltaRoles.Designer.cs">
+      <DependentUpon>AltaRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Rol\ModificacionRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Rol\ModificacionRoles.Designer.cs">
+      <DependentUpon>ModificacionRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ruta\AltaRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ruta\AltaRutas.Designer.cs">
+      <DependentUpon>AltaRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ruta\BajaRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ruta\BajaRutas.Designer.cs">
+      <DependentUpon>BajaRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ruta\Clases\Ruta.cs" />
+    <Compile Include="Abm Ruta\ListadoRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ruta\ListadoRutas.Designer.cs">
+      <DependentUpon>ListadoRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Ruta\ModificacionRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Ruta\ModificacionRutas.Designer.cs">
+      <DependentUpon>ModificacionRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Canje Millas\CanjeMillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canje Millas\CanjeMillas.Designer.cs">
+      <DependentUpon>CanjeMillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra\Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra\Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Consulta Millas\ConsultaMillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta Millas\ConsultaMillas.Designer.cs">
+      <DependentUpon>ConsultaMillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion\DevolucionCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion\DevolucionCompra.Designer.cs">
+      <DependentUpon>DevolucionCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GD2C2015DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GD2C2015DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Generacion Viaje\AltaViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generacion Viaje\AltaViajes.Designer.cs">
+      <DependentUpon>AltaViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Listado Estadistico\ListadoEstadistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado Estadistico\ListadoEstadistico.Designer.cs">
+      <DependentUpon>ListadoEstadistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Rol_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Rol_login.Designer.cs">
+      <DependentUpon>Rol_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_principal.Designer.cs">
+      <DependentUpon>Menu_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro de Usuario\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro de Usuario\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Llegada Destino\RegistroLLegada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Llegada Destino\RegistroLLegada.Designer.cs">
+      <DependentUpon>RegistroLLegada.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Abm Aeronave\AltaAeronaves.resx">
+      <DependentUpon>AltaAeronaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Aeronave\BajaAeronaves.resx">
+      <DependentUpon>BajaAeronaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Aeronave\FrmAltaModifAeronave.resx">
+      <DependentUpon>FrmAltaModifAeronave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Aeronave\ListadoAeronaves.resx">
+      <DependentUpon>ListadoAeronaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Aeronave\ModificacionAeronaves.resx">
+      <DependentUpon>ModificacionAeronaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ciudad\AltaCiudades.resx">
+      <DependentUpon>AltaCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ciudad\BajaCiudades.resx">
+      <DependentUpon>BajaCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ciudad\FrmAltaModifCiudad.resx">
+      <DependentUpon>FrmAltaModifCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ciudad\ListadoCiudades.resx">
+      <DependentUpon>ListadoCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ciudad\ModificacionCiudades.resx">
+      <DependentUpon>ModificacionCiudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Rol\AltaRoles.resx">
+      <DependentUpon>AltaRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Rol\ModificacionRoles.resx">
+      <DependentUpon>ModificacionRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ruta\AltaRutas.resx">
+      <DependentUpon>AltaRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ruta\BajaRutas.resx">
+      <DependentUpon>BajaRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ruta\ListadoRutas.resx">
+      <DependentUpon>ListadoRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Ruta\ModificacionRutas.resx">
+      <DependentUpon>ModificacionRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra\Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Rol_login.resx">
+      <DependentUpon>Rol_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_principal.resx">
+      <DependentUpon>Menu_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="GD2C2015DataSet.xsc">
+      <DependentUpon>GD2C2015DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GD2C2015DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GD2C2015DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GD2C2015DataSet.xss">
+      <DependentUpon>GD2C2015DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
